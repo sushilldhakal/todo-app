@@ -77,6 +77,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
           );
         } else {
           toast.error("Nothing to update");
+          return;
         }
       }
       setModalOpen(false);
